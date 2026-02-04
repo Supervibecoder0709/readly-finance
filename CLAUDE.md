@@ -12,6 +12,7 @@
 |-----|------|
 | **Build** | Vite 5.4, TypeScript 5 |
 | **Framework** | React 18 |
+| **Styling** | Tailwind CSS 3.x |
 | **Backend** | AWS Amplify Gen 2 |
 | **Auth** | Amazon Cognito |
 | **Database** | AWS AppSync + DynamoDB |
@@ -24,7 +25,13 @@ readly-finance/
 │   ├── auth/             # 인증 설정
 │   ├── data/             # 데이터 모델
 │   └── backend.ts        # 백엔드 엔트리
-├── src/                  # React 앱 소스
+├── src/
+│   ├── components/
+│   │   ├── ui/           # 재사용 UI 컴포넌트 (Button 등)
+│   │   └── layout/       # 레이아웃 컴포넌트
+│   ├── hooks/            # 커스텀 React 훅
+│   ├── lib/              # 유틸리티 함수
+│   ├── types/            # TypeScript 타입 정의
 │   ├── assets/           # 정적 에셋
 │   ├── App.tsx           # 메인 앱 컴포넌트
 │   └── main.tsx          # 엔트리 포인트
